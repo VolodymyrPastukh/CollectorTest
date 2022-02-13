@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.scope.navigation.NavigationFragment">
+
+    <TextView
+        android:id="@+id/navigation_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:text="Navigation" />
+
+    <TextView
+        android:id="@+id/location_tv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/black"
+        android:textColor="#4CFF00"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/navigation_title_tv"
+        app:layout_constraintBottom_toTopOf="@id/routes_tv"/>
+
+    <TextView
+        android:id="@+id/routes_tv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/black"
+        android:textColor="#4CFF00"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/location_tv"
+        app:layout_constraintBottom_toTopOf="@id/route_btn" />
+
+    <Button
+        android:id="@+id/route_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Set Route"
+        android:backgroundTint="@color/black"
+        android:layout_marginHorizontal="16dp"
+        app:layout_constraintBottom_toTopOf="@id/next_btn" />
+
+    <Button
+        android:id="@+id/next_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:backgroundTint="@color/black"
+        android:layout_marginHorizontal="16dp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

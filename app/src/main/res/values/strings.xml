@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CollectorTest</string>
+    <string name="client_id">726075368272-f8bugqm00hbsqko3o0q44rsuui7sad3l.apps.googleusercontent.com</string>
+    <string name="mapbox_access_token">pk.eyJ1Ijoidm92YW5zY2llbnRpc3QiLCJhIjoiY2t6bG1pZ2R4MGozODJxbGwwcnpmMWc3OCJ9.e53fHA7c16fphVhNlHiM-A</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

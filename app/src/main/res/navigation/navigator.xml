@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigator"
+    app:startDestination="@id/authFragment">
+
+    <fragment
+        android:id="@+id/photosFragment"
+        android:name="com.example.collectortest.ui.scope.photos.PhotosFragment"
+        android:label="fragment_photos"
+        tools:layout="@layout/fragment_photos" />
+    <fragment
+        android:id="@+id/authFragment"
+        android:name="com.example.collectortest.ui.scope.auth.AuthFragment"
+        android:label="fragment_auth"
+        tools:layout="@layout/fragment_auth" >
+        <action
+            android:id="@+id/action_authFragment_to_navigationFragment"
+            app:destination="@id/navigationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigationFragment"
+        android:name="com.example.collectortest.ui.scope.navigation.NavigationFragment"
+        android:label="fragment_navigation"
+        tools:layout="@layout/fragment_navigation" >
+        <action
+            android:id="@+id/action_navigationFragment_to_photosFragment"
+            app:destination="@id/photosFragment" />
+    </fragment>
+</navigation>
